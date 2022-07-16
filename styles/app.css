@@ -1,32 +1,141 @@
+:root {
+	--orange:#E76F51;
+}
 html {
   box-sizing: border-box;
-	font-size: 62.5%; /* font-size: 10px; */
+  font-size: 62.5%; /* font-size: 10px; */
 }
 
 *,
-*:after,
-*:before {
+*::after,
+*::before {
   box-sizing: inherit;
 }
 
 body {
   font-family: "Roboto Medium", sans-serif;
-	font-size: 1.6rem;
+  font-size: 1.6rem;
   line-height: 1.6;
 }
 
 .container {
-	width: 100%;
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
-	margin-left: auto;
-	margin-right: auto;
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Reset Style */
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 /* Helper Class */
 /* App Style */
+
+.header {
+  background: linear-gradient(rgba(59, 55, 53, 0.5), rgba(59, 55, 53, 0.5)), url(../images/header-bg.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 0;
+}
+
+.logo {
+	display: block;
+	width: 5.5rem;
+	height: 5.5rem;
+}
+
+.logo__img {
+	width: 100%;
+	heigt: 100%;
+}
+
+.menu {
+	display: none;
+}
+
+.menu__item {
+
+}
+
+.menu__link {
+
+}
+
+.mobile-menu {
+	display: none;
+}
+
+.hamburger-menu {
+
+}
+
+.hamburger-menu__item {
+
+}
+
+.hamburger-menu__link {
+
+}
+
+.hamburger-menu-sign {
+
+}
+
+.hamburger-menu-sign__link {
+
+}
+
+.hamburger-menu-sign__link--border {
+
+}
+
+.header-sign {
+	display: none;
+}
+
+.hamburger-menu-icon {
+	background-color: #fff;
+	width: 5.5rem;
+	height: 5.5rem;
+	border-radius: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hamburger-menu-icon__line {
+	display: block;
+	width:3rem;
+	height: 0.3rem;
+	border-radius: 5rem;
+	background-color: var(--orange);
+	position: relative;
+	cursor: pointer;
+}
+
+.hamburger-menu-icon__line::before,.hamburger-menu-icon__line::after {
+	content: "";
+	position: absolute;
+	display: block;
+	width:3rem;
+	height: 0.3rem;
+	border-radius: 5rem;
+	background-color: var(--orange);
+}
+
+.hamburger-menu-icon__line::before {
+	top: -0.8rem;
+}
+
+.hamburger-menu-icon__line::after {
+	top: 0.8rem;
+}
