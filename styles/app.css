@@ -23,7 +23,10 @@ body {
 	margin-right: auto;
 }
 
-.content {
-	background-color: red;
-	height: 18px;
+/* Reset Style */
+a {
+	text-decoration: none;
 }
+
+/* Helper Class */
+/* App Style */
