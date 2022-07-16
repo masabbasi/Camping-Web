@@ -120,6 +120,7 @@ a {
 	background-color: var(--orange);
 	position: relative;
 	cursor: pointer;
+	transition: all 100ms ease-in-out;
 }
 
 .hamburger-menu-icon__line::before,.hamburger-menu-icon__line::after {
@@ -130,6 +131,7 @@ a {
 	height: 0.3rem;
 	border-radius: 5rem;
 	background-color: var(--orange);
+	transition: all 200ms ease-in-out;
 }
 
 .hamburger-menu-icon__line::before {
@@ -138,4 +140,16 @@ a {
 
 .hamburger-menu-icon__line::after {
 	top: 0.8rem;
+}
+
+.hamburger-menu-icon--open .hamburger-menu-icon__line {
+	background-color: transparent;
+}
+
+.hamburger-menu-icon--open .hamburger-menu-icon__line::before {
+	transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-menu-icon--open .hamburger-menu-icon__line::after {
+	transform: translateY(-8px) rotate(-45deg);
 }
