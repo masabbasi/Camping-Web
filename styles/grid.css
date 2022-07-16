@@ -1,0 +1,34 @@
+/* Ipads,Tablets */
+@media (min-width: 576px) {
+  .container {
+    width: 54rem;
+  }
+}
+
+/* Small Screens,laptops */
+@media (min-width: 768px) {
+  .container {
+    width: 72rem;
+  }
+}
+
+/* Desktops, Larg Screens */
+@media (min-width: 992px) {
+  .container {
+    width: 96rem;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1200px) {
+  .container {
+    width: 114rem;
+  }
+}
+
+/* Extra Larg Screens, TV */
+@media (min-width: 1400px) {
+  .container {
+    width: 137rem;
+  }
+}
