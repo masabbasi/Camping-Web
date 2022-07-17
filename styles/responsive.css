@@ -7,6 +7,14 @@
 
 /* Ipads,Tablets */
 @media (min-width: 576px) {
+	.mobile-menu {
+		width: 50rem;
+		left: -50rem;
+	}
+
+	.mobile-menu--open {
+		left:0;
+	}
 }
 
 /* Small Screens,laptops */

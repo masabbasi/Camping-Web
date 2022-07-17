@@ -1,9 +1,8 @@
 :root {
-	--orange:#E76F51;
-	--white: #fff;
-	--gray:#D2D2D2;
-	--dark:#3B3735;
-
+  --orange: #e76f51;
+  --white: #fff;
+  --gray: #d2d2d2;
+  --dark: #3b3735;
 }
 html {
   box-sizing: border-box;
@@ -39,286 +38,288 @@ a {
 
 /* Components */
 .btn {
-	display: block;
-	border-radius: 10rem;
-	color: var(--white);
-	background-color: var(--dark);
-	width: 18rem;
-	height: 5rem;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	line-height: 5rem;
-	font-family: "Roboto Medium";
+  display: block;
+  border-radius: 10rem;
+  color: var(--white);
+  background-color: var(--dark);
+  width: 18rem;
+  height: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: 5rem;
+  font-family: "Roboto Medium";
 }
 
 /* App Style */
 
 .header {
-  background: linear-gradient(rgba(59, 55, 53, 0.5), rgba(59, 55, 53, 0.5)), url(../images/header-bg.jpg);
-	background-position: center;
-	background-size: cover;
-	min-height: 82rem;
-	border-bottom-left-radius: 10rem;
-	border-bottom-right-radius: 10rem;
+  background: linear-gradient(rgba(59, 55, 53, 0.5), rgba(59, 55, 53, 0.5)),
+    url(../images/header-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 82rem;
+  border-bottom-left-radius: 10rem;
+  border-bottom-right-radius: 10rem;
 }
 
 .nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 2.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 0;
 }
 
 /*	Logo	*/
 
 .logo {
-	display: block;
-	width: 5.5rem;
-	height: 5.5rem;
-	margin-right: 4rem;
+  display: block;
+  width: 5.5rem;
+  height: 5.5rem;
+  margin-right: 4rem;
 }
 
 .logo__img {
-	width: 100%;
-	heigt: 100%;
+  width: 100%;
+  heigt: 100%;
 }
 
 /*	Desktop Menu	*/
 
 .wrapper {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .menu {
-	display: none;
+  display: none;
 }
 
 .menu__item {
-	margin-right: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .menu__link {
-	color:var(--gray);
-
+  color: var(--gray);
 }
 
 .menu__link:hover {
-	color: var(--white);
-	transition: color 100ms ease-in;
+  color: var(--white);
+  transition: color 100ms ease-in;
 }
 
 .menu__link--active {
-	color: var(--white);
-	position: relative;
-	z-index: 1;
+  color: var(--white);
+  position: relative;
+  z-index: 1;
 }
 
 .menu__link--active::before {
-	content: "";
-	position: absolute;
-	top:7px;
-	right: 0;
-	left: 0;
-	margin:0 auto;
-	width: 4rem;
-	border-radius: 10rem;
-	height: 0.3rem;
-	background-color: var(--orange);
-	transform: rotate(45deg);
-	z-index: -1;
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 4rem;
+  border-radius: 10rem;
+  height: 0.3rem;
+  background-color: var(--orange);
+  transform: rotate(45deg);
+  z-index: -1;
 }
 
 .nav-sign {
-	display: none;
+  display: none;
 }
 
 .nav-sign__link {
-	color:var(--white);
-	font-family: "Roboto Medium";
+  color: var(--white);
+  font-family: "Roboto Medium";
 }
 
 .nav-sign__link--border {
-	border:1px solid var(--white);
-	padding: 0.5rem 3rem;
-	border-radius: 10rem;
-	margin-left: 1.5rem;
-	transition: all 100ms ease-in;
+  border: 1px solid var(--white);
+  padding: 0.5rem 3rem;
+  border-radius: 10rem;
+  margin-left: 1.5rem;
+  transition: all 100ms ease-in;
 }
 
 .nav-sign__link--border:hover {
-	background-color: var(--white);
-	color: (--dark);
+  background-color: var(--white);
+  color: var(--dark);
+  color: (--dark);
 }
 
 /*	Mobile Menu	*/
 
 .mobile-menu {
-	width:24rem;
-	position: fixed;
-	top:0;
-	left:-24rem;
-	bottom: 0;
-	background-color: var(--dark);
-	padding: 2.5rem;
-	transition: all 250ms ease-in-out;
+  width: 23rem;
+  position: fixed;
+  top: 0;
+  left: -23rem;
+  bottom: 0;
+  background-color: var(--dark);
+  padding: 2.5rem;
+  transition: all 250ms ease-in-out;
 }
 
 .mobile-menu--open {
-	left:0;
+  left: 0;
 }
 
 /*	Mobile Menu Icon	*/
 
 .hamburger-menu-icon {
-	background-color: var(--white);
-	width: 5.5rem;
-	height: 5.5rem;
-	border-radius: 2rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  background-color: var(--white);
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hamburger-menu-icon__line {
-	display: block;
-	width:3rem;
-	height: 0.3rem;
-	border-radius: 5rem;
-	background-color: var(--orange);
-	position: relative;
-	cursor: pointer;
-	transition: all 100ms ease-in-out;
+  display: block;
+  width: 3rem;
+  height: 0.3rem;
+  border-radius: 5rem;
+  background-color: var(--orange);
+  position: relative;
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
 }
 
-.hamburger-menu-icon__line::before,.hamburger-menu-icon__line::after {
-	content: "";
-	position: absolute;
-	display: block;
-	width:3rem;
-	height: 0.3rem;
-	border-radius: 5rem;
-	background-color: var(--orange);
-	transition: all 200ms ease-in-out;
+.hamburger-menu-icon__line::before,
+.hamburger-menu-icon__line::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 3rem;
+  height: 0.3rem;
+  border-radius: 5rem;
+  background-color: var(--orange);
+  transition: all 200ms ease-in-out;
 }
 
 .hamburger-menu-icon__line::before {
-	top: -0.8rem;
+  top: -0.8rem;
 }
 
 .hamburger-menu-icon__line::after {
-	top: 0.8rem;
+  top: 0.8rem;
 }
 
 .hamburger-menu-icon--open .hamburger-menu-icon__line {
-	background-color: transparent;
+  background-color: transparent;
 }
 
 .hamburger-menu-icon--open .hamburger-menu-icon__line::before {
-	transform: translateY(8px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
 }
 
 .hamburger-menu-icon--open .hamburger-menu-icon__line::after {
-	transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 /*	Mobile Menu Item	*/
 .mobile-menu__title {
-	color:var(--white);
-	font-size: 2rem;
-	font-family: "Archivo Black";
-	border-bottom: 1px solid var(--white);
-	padding-bottom: 2rem;
-	margin-bottom: 2rem;
-	text-align: center;
+  color: var(--white);
+  font-size: 2rem;
+  font-family: "Archivo Black";
+  border-bottom: 1px solid var(--white);
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .hamburger-menu {
-	margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 .hamburger-menu__item {
-	margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .hamburger-menu__link {
-	color:var(--white);
-	position: relative;
-	transition: all 250ms ease-in-out;
+  color: var(--white);
+  position: relative;
+  transition: all 250ms ease-in-out;
 }
 
 .hamburger-menu__link::before {
-	content: "";
-	width: 0rem;
-	height: 0.3rem;
-	background-color: var(--orange);
-	border-radius: 5rem;
-	position: absolute;
-	left: 0;
-	top: 0;
-	bottom: 0;
-	margin: auto;
-	transition: all 250ms ease-in-out;
+  content: "";
+  width: 0rem;
+  height: 0.3rem;
+  background-color: var(--orange);
+  border-radius: 5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transition: all 250ms ease-in-out;
 }
 
 .hamburger-menu__link:hover {
-	padding-left: 2.2rem;
+  padding-left: 2.2rem;
 }
 
 .hamburger-menu__link:hover::before {
-	width: 1.6rem;
+  width: 1.6rem;
 }
 
 .hamburger-menu__link--active {
-	padding-left: 2.2rem;
+  padding-left: 2.2rem;
 }
 
 .hamburger-menu__link--active::before {
-	width: 1.6rem;
+  width: 1.6rem;
 }
 
 .hamburger-menu-sign {
-	display: flex;
+  display: flex;
 }
 
 .hamburger-menu-sign__link {
-	color: var(--white);
-	border:1px solid var(--white);
-	display:block;
-	padding: 1rem;
-	text-align: center;
-	flex-grow: 1;
-	transition: all 100ms ease-in;
+  color: var(--white);
+  border: 1px solid var(--white);
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  flex-grow: 1;
+  transition: all 100ms ease-in;
 }
 
 .hamburger-menu-sign__link:hover {
-	background-color: var(--white);
-	color: var(--dark);
+  background-color: var(--white);
+  color: var(--dark);
 }
 
 /*	Header Content	*/
 
 .header-content {
-	text-align: center;
-	color: var(--white);
-	margin-top: 6rem;
+  text-align: center;
+  color: var(--white);
+  margin-top: 6rem;
 }
 
 .header-content__title {
-	max-width: 35rem;
-	font-family: "Archivo Black";
-	font-size: 5rem;
-	line-height: 1.2;
-	margin: 0 auto 3rem;
+  max-width: 35rem;
+  font-family: "Archivo Black";
+  font-size: 5rem;
+  line-height: 1.2;
+  margin: 0 auto 3rem;
 }
 
 .header-content__description {
-	max-width: 34rem;
-	font-size: 1.8rem;
-	margin: 0 auto 2rem;
+  max-width: 34rem;
+  font-size: 1.8rem;
+  margin: 0 auto 2rem;
 }
 
 .header-content__btn {
-	background-color: var(--orange);
+  background-color: var(--orange);
 }
