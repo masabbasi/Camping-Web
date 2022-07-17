@@ -5,6 +5,17 @@
 	}
 }
 
+@media (min-width: 376px) {
+.mobile-menu {
+	width: 29rem;
+	left: -29rem;
+}
+
+.mobile-menu--open {
+	left:0;
+}
+}
+
 /* Ipads,Tablets */
 @media (min-width: 576px) {
 	.mobile-menu {
