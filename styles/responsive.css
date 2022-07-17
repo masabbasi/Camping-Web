@@ -1,10 +1,17 @@
+/* Extra Larg Screens, TV */
+@media (max-width: 375px) {
+	.header-content__title {
+		font-size: 3.9rem;
+	}
+}
+
 /* Ipads,Tablets */
 @media (min-width: 576px) {
 }
 
 /* Small Screens,laptops */
 @media (min-width: 768px) {
-  .hamburger-menu-icon {
+  .hamburger-menu-icon, .mobile-menu {
     display: none;
   }
   .menu {
@@ -14,9 +21,12 @@
 
 /* Desktops, Larg Screens */
 @media (min-width: 992px) {
-  .header-sign {
+  .nav-sign {
     display: block;
   }
+	.header-content__description {
+		max-width: 50rem;
+	}
 }
 
 /* Large Screens */
