@@ -1,0 +1,28 @@
+/* Ipads,Tablets */
+@media (min-width: 576px) {
+}
+
+/* Small Screens,laptops */
+@media (min-width: 768px) {
+  .hamburger-menu-icon {
+    display: none;
+  }
+  .menu {
+    display: flex;
+  }
+}
+
+/* Desktops, Larg Screens */
+@media (min-width: 992px) {
+  .header-sign {
+    display: block;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1200px) {
+}
+
+/* Extra Larg Screens, TV */
+@media (min-width: 1400px) {
+}
