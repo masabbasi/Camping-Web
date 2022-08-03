@@ -24,12 +24,6 @@ mobileMenu.addEventListener('touchend',
 
 	like.forEach((item) => {
 		item.addEventListener("click", (e) => {
-			e.target.children[0].classList.toggle("place__like-icon--fill")
-		})
-	})
-	
-	likeHeart.forEach((item) => {
-		item.addEventListener('click', (e) => {
-			e.target.classList.toggle("place__like-icon--fill")
+			e.currentTarget.children[0].classList.toggle("place__like-icon--fill")
 		})
 	})
