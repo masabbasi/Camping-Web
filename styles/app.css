@@ -2,6 +2,7 @@
   --orange: #e76f51;
   --white: #fff;
   --gray: #d2d2d2;
+	--dark-gray: #8D8D8D;
   --dark: #3b3735;
 	--primary-font-reg: "Roboto Regular", Arial, Helvetica, sans-serif;
 	--primary-font-md: "Roboto Medium", Arial, Helvetica, sans-serif;
@@ -359,7 +360,7 @@ a {
 	background-color: var(--white);
 	color: var(--dark);
 	margin-bottom: 2rem;
-	padding: 0 4rem;
+	padding: 0 2rem;
 	font-size: 1.8rem;
 	flex-grow: 1;
 	margin-right: 1rem;
@@ -375,6 +376,129 @@ a {
 	margin: 1.5rem 0 0.6rem 0;
 }
 
-.service__caption {
+/* Destinations */
 
+.destinations {
+	text-align: center;
+	padding: 6rem 0;
+}
+
+.destinations__logo {
+	width: 8rem;
+	height: 8rem;
+}
+
+.destinations__title {
+	font-family: var(--secondary-font);
+	font-size: 3rem;
+	max-width: 36rem;
+	margin: 3rem auto;
+}
+
+.destinations__items {
+	display: flex;
+flex-wrap: wrap;
+	margin-right: -1rem;
+	margin-left: -1rem;
+}
+
+.place {
+	width: 30rem;
+	flex-grow: 1;
+	background-color: var(--white);
+	border-radius: 2rem;
+	padding: 2rem;
+	color: var(--dark);
+	margin-bottom: 2rem;
+	margin-right: 1rem;
+	margin-left: 1rem;
+	overflow: hidden;
+}
+
+.place__cover {
+	height: 18rem;
+	position: relative;
+	border-radius: 2rem;
+	overflow: hidden;
+
+}
+
+.place__img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.place__like {
+	width: 4rem;
+	height: 4rem;
+	border-radius: 1.5rem;
+	background-color: var(--white);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 1.5rem;
+	right: 1.5rem;
+	cursor: pointer;
+}
+
+.place__like-icon--fill {
+	fill: var(--orange);
+}
+
+.place__price {
+	width: 12rem;
+	background-color: var(--white);
+	position: absolute;
+	bottom: -0.8rem;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+	padding: 0.5rem 2rem;
+	border-radius: 1rem;
+}
+
+.place__price-text {
+	font-family: var(--primary-font-md);
+	color: var(--orange);
+	text-align: center;
+}
+
+.place__title {
+	font-family: var(--secondary-font);
+	margin-top: 3rem;
+	margin-bottom: 0.5rem;
+	font-size: 1.8rem;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.place__caption {
+	margin-bottom: 3rem;
+}
+
+.place__link {
+	color: var(--dark-gray);
+	/* background-color: var(--dark-gray10); */
+	background-color: #8D8D8D10;
+}
+
+.place__link:hover {
+	color: var(--gray);
+	background-color: var(--dark-gray); 
+}
+
+.destinations__btn {
+	color: var(--orange);
+	border: 1px solid var(--orange);
+	background-color: transparent;
+	margin-top: 3rem;
+	transition: all 100ms ease-in;
+}
+
+.destinations__btn:hover {
+	color: var(--app-bg);
+	background-color: var(--orange);
 }

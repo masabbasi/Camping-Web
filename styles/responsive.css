@@ -1,7 +1,11 @@
 /* Extra Larg Screens, TV */
 @media (max-width: 375px) {
 	.header-content__title {
-		font-size: 3.9rem;
+		font-size: 4rem;
+	}
+
+	.destinations__title {
+		font-size: 2.5rem;
 	}
 }
 
