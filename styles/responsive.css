@@ -1,40 +1,47 @@
 /* Extra Larg Screens, TV */
 @media (max-width: 375px) {
-	.header-content__title {
-		font-size: 4rem;
-	}
+  .header-content__title {
+    font-size: 4rem;
+  }
 
-	.destinations__title {
-		font-size: 2.5rem;
-	}
+  .destinations__title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  * {
+    cursor: default !important;
+  }
 }
 
 @media (min-width: 376px) {
-.mobile-menu {
-	width: 29rem;
-	left: -29rem;
-}
+  .mobile-menu {
+    width: 29rem;
+    left: -29rem;
+  }
 
-.mobile-menu--open {
-	left:0;
-}
+  .mobile-menu--open {
+    left: 0;
+  }
 }
 
 /* Ipads,Tablets */
 @media (min-width: 576px) {
-	.mobile-menu {
-		width: 50rem;
-		left: -50rem;
-	}
+  .mobile-menu {
+    width: 50rem;
+    left: -50rem;
+  }
 
-	.mobile-menu--open {
-		left:0;
-	}
+  .mobile-menu--open {
+    left: 0;
+  }
 }
 
 /* Small Screens,laptops */
 @media (min-width: 768px) {
-  .hamburger-menu-icon, .mobile-menu {
+  .hamburger-menu-icon,
+  .mobile-menu {
     display: none;
   }
   .menu {
@@ -47,9 +54,9 @@
   .nav-sign {
     display: block;
   }
-	.header-content__description {
-		max-width: 50rem;
-	}
+  .header-content__description {
+    max-width: 50rem;
+  }
 }
 
 /* Large Screens */
