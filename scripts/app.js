@@ -38,11 +38,9 @@ mobileMenu.addEventListener('touchend',
 			showAllBtn.innerHTML="View All";
 			if (screen.width<514) {
 				placeContainer.style.height="85rem"
-			}
-			if (screen.width>514) {
+			} else if (screen.width>=514 && screen.width<650) {
 				placeContainer.style.height="80rem"
-			}
-			if (screen.width>650) {
+			} else if (screen.width>=650) {
 				placeContainer.style.height="86rem"
 			}
 		}
