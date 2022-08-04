@@ -31,5 +31,12 @@ mobileMenu.addEventListener('touchend',
 	})
 
 	showAllBtn.addEventListener("click",function(){
-		placeContainer.style.height="auto";
+		if (showAllBtn.innerHTML=="View All") {
+			placeContainer.style.height="auto";
+			showAllBtn.innerHTML="Loss";	
+		} else {
+			showAllBtn.innerHTML="View All";
+			placeContainer.style.height="85rem";
+		}
 	})
+
