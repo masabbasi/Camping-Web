@@ -2,6 +2,8 @@ const hamburgerMenuBtn = document.querySelector(".hamburger-menu-icon")
 const mobileMenu = document.querySelector(".mobile-menu")
 const like = document.querySelectorAll(".place__like")
 const likeHeart = document.querySelectorAll(".place__like-icon")
+const showAllBtn = document.querySelector(".destinations__btn")
+const placeContainer = document.querySelector(".destinations__items")
 let touchStart, touchEnd;
 
 hamburgerMenuBtn.addEventListener ("click",function(){
@@ -26,4 +28,8 @@ mobileMenu.addEventListener('touchend',
 		item.addEventListener("click", (e) => {
 			e.currentTarget.children[0].classList.toggle("place__like-icon--fill")
 		})
+	})
+
+	showAllBtn.addEventListener("click",function(){
+		placeContainer.style.height="auto";
 	})

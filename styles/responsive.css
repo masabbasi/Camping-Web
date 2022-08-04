@@ -15,6 +15,21 @@
   }
 }
 
+@media (min-width: 514px) {
+	.destinations__items {
+		height:80rem;
+	}
+}
+
+@media (min-width: 650px) {
+	.destinations__items {
+		height:86rem;
+	}
+}
+
+/*__________________________*/
+
+
 @media (min-width: 376px) {
   .mobile-menu {
     width: 29rem;
@@ -40,7 +55,7 @@
 
 /* Small Screens,laptops */
 @media (min-width: 768px) {
-  .hamburger-menu-icon,
+	.hamburger-menu-icon,
   .mobile-menu {
     display: none;
   }
