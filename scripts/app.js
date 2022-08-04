@@ -36,7 +36,15 @@ mobileMenu.addEventListener('touchend',
 			showAllBtn.innerHTML="Loss";	
 		} else {
 			showAllBtn.innerHTML="View All";
-			placeContainer.style.height="85rem";
+			if (screen.width<514) {
+				placeContainer.style.height="85rem"
+			}
+			if (screen.width>514) {
+				placeContainer.style.height="80rem"
+			}
+			if (screen.width>650) {
+				placeContainer.style.height="86rem"
+			}
 		}
 	})
 
