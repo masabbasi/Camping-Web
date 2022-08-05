@@ -11,6 +11,19 @@
 	.newsletter__title {
 		max-width: 16rem;
 	}
+
+	.footer {
+		text-align: center;
+	}
+
+	.footer-list {
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.footer__right {
+justify-content: center;
+	}
 }
 
 @media (max-width: 768px) {
@@ -95,6 +108,26 @@
 	.newsletter__title {
 		margin-bottom: 0;
 	}
+
+	.footer-app {
+		display: block;
+	}
+
+	.footer-app--mobile {
+		display: none;
+	}
+
+	.footer__wrapper {
+		display: flex;
+	}
+
+	.footer__left {
+		max-width: 50rem;
+	}
+
+	.footer__scroll {
+		left: auto;
+	}
 }
 
 /* Large Screens */
@@ -112,6 +145,15 @@
 	.newsletter__banner {
 		flex-basis: auto;
 		width: 42rem;
+	}
+
+	.footer__wrapper {
+		justify-content: space-between;
+	}
+
+	.footer-list {
+		margin-left: 2rem;
+		margin-bottom: 0;
 	}
 }
 
