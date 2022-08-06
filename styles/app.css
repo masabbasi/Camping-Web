@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 :root {
   --primary-color: #e76f51;
 	--secondary-color:#F8E1DB;
@@ -11,7 +18,8 @@
 	--app-bg:#FAF4F2;
 }
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 62.5%; /* font-size: 10px; */
 	scroll-behavior: smooth;
 }
@@ -19,7 +27,8 @@ html {
 *,
 *::after,
 *::before {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 body {
@@ -46,9 +55,15 @@ a {
 
 /* Components */
 .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
   border-radius: 10rem;
   color: var(--white);
   background-color: var(--dark);
@@ -65,6 +80,10 @@ a {
 /* Header Style */
 
 .header {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(59, 55, 53, 0.5)), to(rgba(59, 55, 53, 0.5))),
+    url("../images/header-bg.jpg");
+  background: -o-linear-gradient(rgba(59, 55, 53, 0.5), rgba(59, 55, 53, 0.5)),
+    url("../images/header-bg.jpg");
   background: linear-gradient(rgba(59, 55, 53, 0.5), rgba(59, 55, 53, 0.5)),
     url("../images/header-bg.jpg");
   background-position: center;
@@ -75,9 +94,15 @@ a {
 }
 
 .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 2.5rem 0;
 }
 
@@ -98,8 +123,12 @@ a {
 /*	Desktop Menu	*/
 
 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu {
@@ -116,6 +145,8 @@ a {
 
 .menu__link:hover {
   color: var(--white);
+  -webkit-transition: color 100ms ease-in;
+  -o-transition: color 100ms ease-in;
   transition: color 100ms ease-in;
 }
 
@@ -136,7 +167,9 @@ a {
   border-radius: 10rem;
   height: 0.3rem;
   background-color: var(--primary-color);
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
   z-index: -1;
 }
 
@@ -154,6 +187,8 @@ a {
   padding: 0.5rem 3rem;
   border-radius: 10rem;
   margin-left: 1.5rem;
+  -webkit-transition: all 100ms ease-in;
+  -o-transition: all 100ms ease-in;
   transition: all 100ms ease-in;
 }
 
@@ -173,6 +208,8 @@ a {
   bottom: 0;
   background-color: var(--dark);
   padding: 2.5rem;
+  -webkit-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
 	z-index: 100;
 }
@@ -188,9 +225,15 @@ a {
   width: 5.5rem;
   height: 5.5rem;
   border-radius: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hamburger-menu-icon__line {
@@ -201,6 +244,8 @@ a {
   background-color: var(--primary-color);
   position: relative;
   cursor: pointer;
+  -webkit-transition: all 100ms ease-in-out;
+  -o-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
 }
 
@@ -213,6 +258,8 @@ a {
   height: 0.3rem;
   border-radius: 5rem;
   background-color: var(--primary-color);
+  -webkit-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
 
@@ -229,11 +276,15 @@ a {
 }
 
 .hamburger-menu-icon--open .hamburger-menu-icon__line::before {
-  transform: translateY(8px) rotate(45deg);
+  -webkit-transform: translateY(8px) rotate(45deg);
+      -ms-transform: translateY(8px) rotate(45deg);
+          transform: translateY(8px) rotate(45deg);
 }
 
 .hamburger-menu-icon--open .hamburger-menu-icon__line::after {
-  transform: translateY(-8px) rotate(-45deg);
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+      -ms-transform: translateY(-8px) rotate(-45deg);
+          transform: translateY(-8px) rotate(-45deg);
 }
 
 /*	Mobile Menu Item	*/
@@ -258,6 +309,8 @@ a {
 .hamburger-menu__link {
   color: var(--white);
   position: relative;
+  -webkit-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
 }
 
@@ -272,6 +325,8 @@ a {
   top: 0;
   bottom: 0;
   margin: auto;
+  -webkit-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
 }
 
@@ -292,6 +347,8 @@ a {
 }
 
 .hamburger-menu-sign {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -301,7 +358,11 @@ a {
   display: block;
   padding: 1rem;
   text-align: center;
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-transition: all 100ms ease-in;
+  -o-transition: all 100ms ease-in;
   transition: all 100ms ease-in;
 }
 
@@ -346,8 +407,11 @@ a {
 
 .services {
 	margin-top: -20rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	margin-right: -1rem;
 	margin-left: -1rem;
 }
@@ -356,17 +420,28 @@ a {
 	width: 30rem;
 	height: 26rem;
 	border-radius: 2rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	text-align: center;
 	background-color: var(--white);
 	color: var(--dark);
 	margin-bottom: 2rem;
 	padding: 0 2rem;
 	font-size: 1.8rem;
-	flex-grow: 1;
+	-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
 	margin-right: 1rem;
 	margin-left: 1rem;
 }
@@ -424,8 +499,11 @@ a {
 }
 
 .destinations__items {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	margin-right: -1rem;
 	margin-left: -1rem;
 	overflow: hidden;
@@ -434,7 +512,9 @@ a {
 
 .place {
 	width: 30rem;
-	flex-grow: 1;
+	-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
 	background-color: var(--white);
 	border-radius: 2rem;
 	padding: 2rem;
@@ -456,7 +536,8 @@ a {
 .place__img {
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
+	-o-object-fit: cover;
+	   object-fit: cover;
 }
 
 .place__like {
@@ -464,9 +545,15 @@ a {
 	height: 4rem;
 	border-radius: 1.5rem;
 	background-color: var(--white);
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	position: absolute;
 	top: 1.5rem;
 	right: 1.5rem;
@@ -501,7 +588,8 @@ a {
 	margin-bottom: 0.5rem;
 	font-size: 1.8rem;
 	white-space: nowrap;
-	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	   text-overflow: ellipsis;
 	overflow: hidden;
 }
 
@@ -524,6 +612,8 @@ a {
 	border: 1px solid var(--primary-color);
 	background-color: transparent;
 	margin-top: 3rem;
+	-webkit-transition: all 100ms ease-in;
+	-o-transition: all 100ms ease-in;
 	transition: all 100ms ease-in;
 }
 
@@ -535,8 +625,13 @@ a {
 /* Newsletter */
 
 .newsletter {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column-reverse;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: reverse;
+	    -ms-flex-direction: column-reverse;
+	        flex-direction: column-reverse;
 	background-color: var(--secondary-color);
 	border-radius: 2rem;
 	color:var(--dark);
@@ -587,12 +682,17 @@ a {
 
 .newsletter__form {
 	height: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .newsletter__email-icon {
-	flex-shrink: 0;
+	-ms-flex-negative: 0;
+	    flex-shrink: 0;
 }
 
 .newsletter__input {
@@ -612,12 +712,20 @@ a {
 	outline: none;
 	border: none;
 	background-color: var(--primary-color);
-	flex-shrink: 0;
+	-ms-flex-negative: 0;
+	    flex-shrink: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	cursor: pointer;
-	box-shadow: 0 0 1.5rem rgb(231, 111, 81, 0.4);
+	-webkit-box-shadow: 0 0 1.5rem rgb(231, 111, 81, 0.4);
+	        box-shadow: 0 0 1.5rem rgb(231, 111, 81, 0.4);
 }
 
 .newsletter__img {
@@ -643,15 +751,22 @@ a {
 	height: 5rem;
 	border-radius: 2rem;
 	background-color: var(--white);
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	position: absolute;
 	right: 0;
 	left: 0;
 	margin: 0 auto;
 	top: -2.5rem;
-	box-shadow: 0 0 1.5rem #3b373510;
+	-webkit-box-shadow: 0 0 1.5rem #3b373510;
+	        box-shadow: 0 0 1.5rem #3b373510;
 }
 
 .footer__title {
@@ -666,8 +781,11 @@ a {
 }
 
 .footer__right {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	margin-bottom: 2rem;
 }
 
