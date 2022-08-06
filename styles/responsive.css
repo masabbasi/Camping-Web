@@ -60,6 +60,10 @@ justify-content: center;
 
 /* Ipads,Tablets */
 @media (min-width: 576px) {
+	.container {
+    width: 54rem;
+  }
+
   .mobile-menu {
     width: 50rem;
     left: -50rem;
@@ -72,6 +76,10 @@ justify-content: center;
 
 /* Small Screens,laptops */
 @media (min-width: 768px) {
+	.container {
+    width: 72rem;
+  }
+
 	.hamburger-menu-icon,
   .mobile-menu {
     display: none;
@@ -94,10 +102,23 @@ justify-content: center;
 	.newsletter__banner {
 		flex-basis: 40%;
 	}
+
+	.newsletter::before {
+		width: auto;
+		height: auto;
+		top: -5rem;
+		left: -40rem;
+		background-size: auto;
+		background-position: center left;
+	}
 }
 
 /* Desktops, Larg Screens */
 @media (min-width: 992px) {
+	.container {
+    width: 96rem;
+  }
+
   .nav-sign {
     display: block;
   }
@@ -128,10 +149,23 @@ justify-content: center;
 	.footer__scroll {
 		left: auto;
 	}
+
+	.newsletter::before {
+		top: -10rem;
+		left: -30rem;
+	}
 }
 
 /* Large Screens */
 @media (min-width: 1200px) {
+	.container {
+    width: 114rem;
+  }
+
+	.header {
+		min-height: 80rem;
+	}
+
 	.newsletter {
 		justify-content: space-between;
 	}
@@ -159,6 +193,10 @@ justify-content: center;
 
 /* Extra Larg Screens, TV */
 @media (min-width: 1400px) {
+	.container {
+    width: 137rem;
+  }
+	
 	.newsletter {
 		padding: 3rem 6rem;
 	}
