@@ -131,7 +131,7 @@
 	}
 }
 
-/* Desktops, Larg Screens */
+/* Desktops */
 @media (min-width: 992px) {
 	.container {
     width: 96rem;
